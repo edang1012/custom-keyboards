@@ -287,17 +287,6 @@ F 3 "~" H 9550 4300 50  0001 C CNN
 	1    9550 4300
 	0    1    1    0   
 $EndComp
-$Comp
-L power:+BATT #PWR0106
-U 1 1 5E7B9DBE
-P 9350 4000
-F 0 "#PWR0106" H 9350 3850 50  0001 C CNN
-F 1 "+BATT" H 9365 4173 50  0000 C CNN
-F 2 "" H 9350 4000 50  0001 C CNN
-F 3 "" H 9350 4000 50  0001 C CNN
-	1    9350 4000
-	1    0    0    -1  
-$EndComp
 Connection ~ 8850 4800
 Wire Wire Line
 	8850 4850 8850 4800
@@ -410,17 +399,6 @@ Wire Wire Line
 	7750 5200 7750 5600
 Wire Wire Line
 	8000 5200 8000 5300
-$Comp
-L power:+BATT #PWR0110
-U 1 1 5E775143
-P 8000 5200
-F 0 "#PWR0110" H 8000 5050 50  0001 C CNN
-F 1 "+BATT" H 8015 5373 50  0000 C CNN
-F 2 "" H 8000 5200 50  0001 C CNN
-F 3 "" H 8000 5200 50  0001 C CNN
-	1    8000 5200
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:D_Schottky_Small D1
 U 1 1 5E769BF4
@@ -743,14 +721,6 @@ F16 "Col11" I L 9800 2600 50
 F17 "Col12" I L 9800 2700 50 
 $EndSheet
 Wire Wire Line
-	9800 1100 9400 1100
-Wire Wire Line
-	9400 1200 9800 1200
-Wire Wire Line
-	9800 1300 9400 1300
-Wire Wire Line
-	9800 1400 9400 1400
-Wire Wire Line
 	9400 1600 9800 1600
 Wire Wire Line
 	9400 1700 9800 1700
@@ -770,34 +740,6 @@ Wire Wire Line
 	9400 2400 9800 2400
 Wire Wire Line
 	9400 2500 9800 2500
-Text GLabel 9400 1100 0    50   Input ~ 0
-Row1
-Text GLabel 9400 1200 0    50   Input ~ 0
-Row2
-Text GLabel 9400 1300 0    50   Input ~ 0
-Row3
-Text GLabel 9400 1400 0    50   Input ~ 0
-Row4
-Text GLabel 9400 1600 0    50   Input ~ 0
-Col1
-Text GLabel 9400 1700 0    50   Input ~ 0
-Col2
-Text GLabel 9400 1800 0    50   Input ~ 0
-Col3
-Text GLabel 9400 1900 0    50   Input ~ 0
-Col4
-Text GLabel 9400 2000 0    50   Input ~ 0
-Col5
-Text GLabel 9400 2100 0    50   Input ~ 0
-Col6
-Text GLabel 9400 2200 0    50   Input ~ 0
-Col7
-Text GLabel 9400 2300 0    50   Input ~ 0
-Col8
-Text GLabel 9400 2400 0    50   Input ~ 0
-Col9
-Text GLabel 9400 2500 0    50   Input ~ 0
-Col10
 $Comp
 L Connector_Generic:Conn_01x04 J1
 U 1 1 5EAE7B36
@@ -990,12 +932,8 @@ Wire Wire Line
 	2300 7150 2300 7200
 Wire Wire Line
 	2300 7200 1300 7200
-Text GLabel 9400 2600 0    50   Input ~ 0
-Col11
 Wire Wire Line
 	9400 2600 9800 2600
-Text GLabel 9400 2700 0    50   Input ~ 0
-Col12
 Wire Wire Line
 	9400 2700 9800 2700
 Wire Wire Line
@@ -1118,4 +1056,172 @@ Wire Wire Line
 Wire Wire Line
 	4050 7000 3150 7000
 NoConn ~ 4050 7000
+$Comp
+L Switch:SW_SPDT SW2
+U 1 1 5EBDDC71
+P 4500 5850
+F 0 "SW2" H 4500 6135 50  0000 C CNN
+F 1 "SW_SPDT" H 4500 6044 50  0000 C CNN
+F 2 "random-keyboard-parts:Batt_SW" H 4500 5850 50  0001 C CNN
+F 3 "~" H 4500 5850 50  0001 C CNN
+	1    4500 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR0106
+U 1 1 5EBE7CC9
+P 4050 5800
+F 0 "#PWR0106" H 4050 5650 50  0001 C CNN
+F 1 "+BATT" H 4065 5973 50  0000 C CNN
+F 2 "" H 4050 5800 50  0001 C CNN
+F 3 "" H 4050 5800 50  0001 C CNN
+	1    4050 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 5800 4050 5850
+Wire Wire Line
+	4050 5850 4300 5850
+$Comp
+L power:+VSW #PWR0110
+U 1 1 5EBF16B7
+P 4950 5700
+F 0 "#PWR0110" H 4950 5550 50  0001 C CNN
+F 1 "+VSW" H 4965 5873 50  0000 C CNN
+F 2 "" H 4950 5700 50  0001 C CNN
+F 3 "" H 4950 5700 50  0001 C CNN
+	1    4950 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 5700 4950 5750
+Wire Wire Line
+	4950 5750 4700 5750
+NoConn ~ 4700 5950
+$Comp
+L power:+VSW #PWR0130
+U 1 1 5EC01863
+P 9350 4000
+F 0 "#PWR0130" H 9350 3850 50  0001 C CNN
+F 1 "+VSW" H 9365 4173 50  0000 C CNN
+F 2 "" H 9350 4000 50  0001 C CNN
+F 3 "" H 9350 4000 50  0001 C CNN
+	1    9350 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+VSW #PWR0131
+U 1 1 5EC02FC3
+P 8000 5200
+F 0 "#PWR0131" H 8000 5050 50  0001 C CNN
+F 1 "+VSW" H 8015 5373 50  0000 C CNN
+F 2 "" H 8000 5200 50  0001 C CNN
+F 3 "" H 8000 5200 50  0001 C CNN
+	1    8000 5200
+	1    0    0    -1  
+$EndComp
+Text GLabel 9400 1400 0    50   Input ~ 0
+Row4
+Text GLabel 9400 1300 0    50   Input ~ 0
+Row3
+Text GLabel 9400 1200 0    50   Input ~ 0
+Row2
+Text GLabel 9400 1100 0    50   Input ~ 0
+Row1
+Wire Wire Line
+	9800 1400 9400 1400
+Wire Wire Line
+	9800 1300 9400 1300
+Wire Wire Line
+	9400 1200 9800 1200
+Wire Wire Line
+	9800 1100 9400 1100
+Text GLabel 4800 4050 2    50   Output ~ 0
+Row1
+Text GLabel 4800 3950 2    50   Output ~ 0
+Row2
+Text GLabel 4800 3850 2    50   Output ~ 0
+Row3
+Text GLabel 4800 1450 2    50   Output ~ 0
+Row4
+Text GLabel 9400 2700 0    50   Input ~ 0
+Col12
+Text GLabel 9400 2600 0    50   Input ~ 0
+Col11
+Text GLabel 9400 2500 0    50   Input ~ 0
+Col10
+Text GLabel 9400 2400 0    50   Input ~ 0
+Col9
+Text GLabel 9400 2300 0    50   Input ~ 0
+Col8
+Text GLabel 9400 2200 0    50   Input ~ 0
+Col7
+Text GLabel 9400 2100 0    50   Input ~ 0
+Col6
+Text GLabel 9400 2000 0    50   Input ~ 0
+Col5
+Text GLabel 9400 1900 0    50   Input ~ 0
+Col4
+Text GLabel 9400 1800 0    50   Input ~ 0
+Col3
+Text GLabel 9400 1700 0    50   Input ~ 0
+Col2
+Text GLabel 9400 1600 0    50   Input ~ 0
+Col1
+Text GLabel 4800 2850 2    50   Output ~ 0
+Col1
+Text GLabel 4800 2950 2    50   Output ~ 0
+Col2
+Text GLabel 4800 3150 2    50   Output ~ 0
+Col3
+Text GLabel 4800 3250 2    50   Output ~ 0
+Col4
+Text GLabel 4800 3350 2    50   Output ~ 0
+Col5
+Text GLabel 4800 1950 2    50   Output ~ 0
+Col6
+Text GLabel 4800 2050 2    50   Output ~ 0
+Col7
+Text GLabel 4800 2350 2    50   Output ~ 0
+Col8
+Text GLabel 4800 2450 2    50   Output ~ 0
+Col9
+Text GLabel 4800 4350 2    50   Output ~ 0
+Col10
+Text GLabel 4800 4250 2    50   Output ~ 0
+Col11
+Text GLabel 4800 4150 2    50   Output ~ 0
+Col12
+Wire Wire Line
+	4800 4050 4050 4050
+Wire Wire Line
+	4050 3950 4800 3950
+Wire Wire Line
+	4800 3850 4050 3850
+Wire Wire Line
+	4800 4150 4050 4150
+Wire Wire Line
+	4050 4250 4800 4250
+Wire Wire Line
+	4800 4350 4050 4350
+Wire Wire Line
+	4800 1950 4050 1950
+Wire Wire Line
+	4800 2050 4050 2050
+Wire Wire Line
+	4050 2350 4800 2350
+Wire Wire Line
+	4800 2450 4050 2450
+Wire Wire Line
+	4800 2850 4050 2850
+Wire Wire Line
+	4050 2950 4800 2950
+Wire Wire Line
+	4800 3150 4050 3150
+Wire Wire Line
+	4050 3250 4800 3250
+Wire Wire Line
+	4800 3350 4050 3350
+Wire Wire Line
+	4800 1450 4050 1450
 $EndSCHEMATC

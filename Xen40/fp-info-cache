@@ -1,4 +1,4 @@
-17110593719415143
+17112183148577588
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -75837,6 +75837,13 @@ random-keyboard-parts
 0
 9
 9
+random-keyboard-parts
+Batt_SW
+
+
+0
+3
+3
 random-keyboard-parts
 D_SOD-123-Pretty
 SOD-123
